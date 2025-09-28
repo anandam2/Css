@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Blog Section</title>
+    <style>
+        .blog{
+            display: flex;
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            border-radius: 0px 50px 0px 50px;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        a:hover {
+        color: peru;
+        }
+        .container1, .container2, .container3 {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        @media screen and (max-width: 600px) {
+            .blog{
+                display: block;
+                font-size: small;
+            }
+            .container1, .container2, .container3 {
+                border-bottom: 2px solid black;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            body{
+                background-color: #f1f1c8;
+                margin: auto;
+            }
+            .container1, .container2, .container3 {
+             border-right: 2px solid black;
+            }
+    }
+    </style>
+</head>
+<body>
+    <div class="blog">
+        <div class="container1">
+                <h3>Exploring Bali: The Island of Gods</h3>
+                <img src="https://media.istockphoto.com/id/675172642/photo/pura-ulun-danu-bratan-temple-in-bali.jpg?s=612x612&w=0&k=20&c=_MPdmDviIyhldqhf7t6s63C-bZbTGfNHMlJP9SIa8Y0=" alt="Bali Temple">
+                <p>From lush rice terraces to stunning beaches and vibrant temples, Bali offers a perfect mix of culture and relaxation.<a href="#">Read More</a></p>
+        </div>
+        <div class="container2">
+                <h3>Paris: A City of Romance and Art</h3>
+                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/1c/9c.jpg" alt="Eiffel Tower">
+                <p>Wander through charming streets, enjoy world-class museums, and indulge in café culture in the heart of France.<a href="#">Read More</a></p>
+        </div>
+        <div class="container3">
+                <h3>Tokyo: Tradition Meets Modern Life</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOoRgAGNCD5bXllUthdgqihfCaotzz1ws66NOzsT0N0-ZbNnQHw8daLvG05EfSQzFP01U&usqp=CAU" alt="Tokyo">
+                <p>Experience the energy of Tokyo where ancient temples stand beside futuristic skyscrapers, and sushi is at its best.<a href="#">Read More</a></p>
+        </div>
+    </div>
+</body>
+</html>
